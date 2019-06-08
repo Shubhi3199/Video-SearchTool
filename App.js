@@ -10,7 +10,7 @@ class App extends React.Component{
         
            const response=await youtube.get('/search',{
                 params:{
-                    part:term
+                    q:term
                 }
             });
         this.setState({videos: response.data.items}); 
